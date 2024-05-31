@@ -6,7 +6,7 @@ Minio is a high-performance, S3 compatible object store. It can be deployed on a
 - Namespace-level admin permissions, or permission to create your own project
 
 ## Setting up Minio on Openshift
-1- Create New-Project called Minio
-2- deploy minio.yaml that is foung in [Minio.yaml](minio.yaml)
-3- login to minio-ui with minio-secret after the deployment finishes
-4- create bucket for oadp.
+- Create New-Project called Minio
+- deploy minio.yaml that is foung in [Minio.yaml](minio.yaml)
+- login to minio-ui with minio-secret after the deployment finishes
+- create bucket for oadp.
