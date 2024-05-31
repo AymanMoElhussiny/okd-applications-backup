@@ -66,6 +66,7 @@ spec:
 
 
 5- create a restore resource 
+```yaml
 apiVersion: velero.io/v1
 kind: Restore
 metadata:
@@ -79,7 +80,7 @@ spec:
     - persistentvolumeclaims
     - pods
   restorePVs: true
-
+```
 ## References
 1. [About Openshift API for Data Protection](https://docs.openshift.com/container-platform/latest/backup_and_restore/application_backup_and_restore/installing/about-installing-oadp.html)
 
