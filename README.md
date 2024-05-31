@@ -76,7 +76,7 @@ spec:
   backupName: postgres-presist-backup
   includedResources:
     - persistentvolume
-	- deploymentconfigs
+    - deploymentconfigs
     - persistentvolumeclaims
     - pods
   restorePVs: true
