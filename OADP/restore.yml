@@ -1,1 +1,13 @@
-
+apiVersion: velero.io/v1
+kind: Restore
+metadata:
+  name: postgres-presistent-restore
+  namespace: openshift-adp
+spec:
+  backupName: postgres-presist-backup
+  includedResources:
+    - persistentvolume
+	- deploymentconfigs
+    - persistentvolumeclaims
+    - pods
+  restorePVs: true
