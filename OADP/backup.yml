@@ -1,0 +1,11 @@
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: postgres-presist-backup #backup_resource_name
+  namespace: openshift-adp
+spec:
+  defaultVolumesToRestic: true
+  includedNamespaces:
+    - postgres-presist #namespace
+  storageLocation: velero-sample-1 #storage-sample
+  ttl: 720h0m0s
