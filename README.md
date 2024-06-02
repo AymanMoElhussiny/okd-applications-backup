@@ -35,18 +35,20 @@ This project aims to implement a robust backup and restore solution for RESTful 
    - Configure MinIO buckets for storing backup data.
 
 2. **Deploy OADP Operator**:
-   - Install the OADP operator on the OKD cluster.
-   - Configure the OADP operator to integrate with MinIO for backup and restore operations.
+   - [Install the OADP operator on the OKD cluster](OADP/installation.sh).
+   - [Create cloud credentials](OADP/cloud-credentials.yml).
+   
 
 3. **Configure Backup and Restore Policies**:
+   - [create Data protection application on](OADP/DataProtectionApplication.yaml)
    - Define backup schedules, retention policies, and storage locations.
    - Set up restore procedures and test them to ensure reliability.
 
-4. **Automate Backup Process**:
+5. **Automate Backup Process**:
    - Use the OADP operator to automate the backup process for the RESTful applications.
    - Ensure that backups are taken at regular intervals and stored in MinIO.
 
-5. **Monitor and Manage Backups**:
+6. **Monitor and Manage Backups**:
    - Implement monitoring tools to track the status of backups and restore operations.
    - Set up alerts for backup failures or issues that require attention.
 
