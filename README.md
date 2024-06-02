@@ -50,5 +50,9 @@ This project aims to implement a robust backup and restore solution for RESTful 
 - **Scalability**: Supports the growing needs of the application and data volumes.
 - **Reliability**: Provides a reliable and tested solution for data backup and restoration.
 
+### References:
+- MinIO: [MinIO Documentation](https://docs.min.io/)
+- OADP Operator: [OADP Documentation](https://github.com/openshift/oadp-operator)
+
 #### Conclusion
 This project establishes a comprehensive backup and restore solution for RESTful applications running on OKD, using MinIO for object storage and the OADP operator for managing data protection tasks. By implementing this solution, organizations can ensure the safety, integrity, and availability of their critical application data, thereby maintaining business continuity and minimizing downtime.
